@@ -358,7 +358,6 @@ int main() {
                             velocity.add(x, y, dx, dy, force / rho[(int)field[x][y]]);
                         }
 
-                        //#pragma omp atomic
                         p[x][y] -= force / dirs[x][y];
                     }
                 }
